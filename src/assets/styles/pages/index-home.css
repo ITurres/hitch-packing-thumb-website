@@ -1,0 +1,7 @@
+@import "/src/assets/styles/resets/normalize.css";
+
+@import "/src/assets/styles/variables/colors.css";
+
+@import "/src/assets/styles/base/base.css";
+
+@import "/src/assets/styles/utils-styles/navbar.css";
