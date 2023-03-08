@@ -1,16 +1,16 @@
 /*resets*/
-@import "/src/assets/styles/resets/normalize.css";
+@import "../resets/normalize.css";
 
 /*variables*/
-@import "/src/assets/styles/variables/colors.css";
+@import "../variables/colors.css";
 
 /*base*/
-@import "/src/assets/styles/base/base.css";
+@import "../base/base.css";
 
 /*utils-styles*/
-@import "/src/assets/styles/utils-styles/navbar.css";
+@import "../utils-styles/navbar.css";
 
 /*page-sections*/
 
 /*config*/
-@import "/src/assets/styles/config/breakpoints/navbar-breakpoints.css";
+@import "../config/breakpoints/navbar-breakpoints.css";
