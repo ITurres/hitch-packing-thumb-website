@@ -20,7 +20,8 @@ body {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
-  background-color: white;
+  /* background-color: white; */
+  background-color: var(--style-color-lighter-yellow);
 }
 
 a {
