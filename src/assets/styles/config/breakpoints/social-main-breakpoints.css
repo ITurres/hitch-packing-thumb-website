@@ -1,0 +1,25 @@
+@media (max-width: 900px) {
+  .main__social-grid {
+    margin-top: 3rem;
+    padding-left: 0;
+    height: 100%;
+  }
+  .social-grid__item:first-of-type {
+    margin-top: unset;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .social-grid__item:first-of-type {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-height: 1000px) and (orientation: portrait) {
+  .main {
+    height: 100vh;
+  }
+  .main__social-grid {
+    margin-top: unset;
+  }
+}

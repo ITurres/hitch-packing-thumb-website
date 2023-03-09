@@ -1,0 +1,71 @@
+body {
+  background-color: var(--style-color-light-aqua-green);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--style-color-light-aqua-green);
+  background: linear-gradient(
+    -45deg,
+    var(--style-color-lighter-yellow),
+    var(--style-color-light-aqua-green),
+    var(--style-color-light-aqua-green),
+    var(--style-color-light-aqua-green)
+  );
+  transition: background-color 1.2s;
+  height: 100%;
+}
+
+.main__social-grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  height: 100vh;
+  width: 100%;
+  padding-left: 220px;
+}
+
+.social-grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-grid__item .fa-brands {
+  font-size: 15rem;
+}
+
+.social-grid__item .fa-square-instagram {
+  color: #405de6;
+  background: linear-gradient(
+    -140deg,
+    #5b51d8,
+    #5b51d8,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #d64273,
+    #d64273,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-grid__item .fa-square-facebook {
+  color: #4267b2;
+}
+.social-grid__item .fa-square-youtube {
+  color: #ff0000;
+}
+.social-grid__item .fa-square-twitter {
+  color: #1da1f2;
+}
