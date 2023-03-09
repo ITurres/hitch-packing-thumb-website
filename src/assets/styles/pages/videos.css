@@ -1,5 +1,6 @@
 /*resets*/
 @import "../resets/normalize.css";
+@import "../resets/reset-bootstrap-styles.css";
 
 /*variables*/
 @import "../variables/colors.css";
@@ -11,6 +12,8 @@
 @import "../utils-styles/navbar.css";
 
 /*page-sections*/
+@import "../page-sections/videos-main.css";
 
 /*config*/
 @import "../config/breakpoints/navbar-breakpoints.css";
+@import "../config/breakpoints/videos-main-breakpoints.css";

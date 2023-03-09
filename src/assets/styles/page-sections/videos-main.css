@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ee604a;
+  transition: background-color 1.2s;
+  margin-left: 5rem;
+  height: 100vh;
+}
+
+.main__title {
+  /* font-size: 1.5rem; */
+  font-size: clamp(0.5rem, 1vw + 1rem, 3rem);
+  margin-bottom: 2rem;
+  color: var(--style-color-lighter-yellow);
+}
+
+.carousel {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.carousel-item iframe {
+  width: 100%;
+  height: 60vh;
+}
+
+.carousel-caption {
+  color: var(--style-color-light-red);
+  border-radius: 1rem;
+  background-color: var(--style-color-lighter-yellow);
+  padding: 0.2rem;
+}
