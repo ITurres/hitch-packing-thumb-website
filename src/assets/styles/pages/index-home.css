@@ -11,6 +11,8 @@
 @import "../utils-styles/navbar.css";
 
 /*page-sections*/
+@import "../page-sections/index-home-main.css";
 
 /*config*/
 @import "../config/breakpoints/navbar-breakpoints.css";
+@import "../config/breakpoints/index-home-main-breakpoints.css";
