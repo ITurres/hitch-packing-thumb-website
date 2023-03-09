@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+:root {
+  --typewritterSpeed: 3s;
+  --typewritterSteps: steps(
+    12
+  ); /**? 12 = our h1 text content => Hello World! (including spaces and symbols)*/
+  --fadeTiming: 750ms;
+}
+@keyframes typewriterEffect {
+  to {
+    left: 100%;
+  }
+}
+@keyframes cursorBlink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes subtitleFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.main {
+  background-color: var(--style-color-lighter-yellow);
+}
+
+.main__profile,
+.profile__sources--holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__profile {
+  flex-direction: column;
+  height: calc(100vh - 110px);
+}
+
+.profile__sources--holder {
+  width: 100%;
+}
+
+.profile__img {
+  border-radius: 100%;
+  object-fit: cover;
+  max-width: 400px;
+  width: 90%;
+  height: 90%;
+}
+
+.profile__title {
+  font-size: clamp(0.5rem, 2vw + 2rem, 4rem);
+  letter-spacing: 0.2rem;
+  margin: 2rem 0;
+}
+
+.profile__subtitle {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.profile__title {
+  font-family: "Source Code Pro", monospace; /**! IMPORTANT: font-family must be a monospace font type*/
+  position: relative;
+  width: max-content;
+}
+
+.profile__title::before,
+.profile__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.profile__title::before {
+  background-color: var(--style-color-lighter-yellow);
+  animation: typewriterEffect var(--typewritterSpeed) var(--typewritterSteps) 1s
+    forwards;
+}
+
+.profile__title::after {
+  width: 0.2rem;
+  background-color: var(--style-color-off-black);
+  animation: typewriterEffect var(--typewritterSpeed) var(--typewritterSteps) 1s
+      forwards,
+    cursorBlink var(--fadeTiming) var(--typewritterSteps) infinite;
+}
+
+.profile__subtitle {
+  opacity: 0;
+  animation: subtitleFadeIn var(--fadeTiming) ease
+    calc(var(--typewritterSpeed) + 2s) forwards;
+}

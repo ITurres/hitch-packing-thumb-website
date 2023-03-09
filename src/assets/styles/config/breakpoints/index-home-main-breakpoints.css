@@ -1,0 +1,8 @@
+@media (max-height: 600px) and (orientation: landscape) {
+  .main__profile {
+    height: 100%;
+  }
+  .profile__img {
+    width: 35%;
+  }
+}
