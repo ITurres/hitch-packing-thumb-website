@@ -1,4 +1,4 @@
-.navbar {
+.my-navbar {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -11,26 +11,26 @@
   transition: width 0.2s linear;
 }
 
-.navbar__logo {
+.my-navbar__logo {
   text-align: center;
   display: flex;
   transition: all 0.5s ease;
 }
 
-.navbar__logo img {
+.my-navbar__logo img {
   text-align: center;
   width: 100%;
   height: auto;
 }
 
-.navbar__logo span {
+.my-navbar__logo span {
   font-weight: bold;
   font-size: 1.2rem;
   text-transform: capitalize;
 }
 
-.navbar__logo,
-.navbar__link {
+.my-navbar__logo,
+.my-navbar__link {
   position: relative;
   display: flex;
   text-align: center;
@@ -40,7 +40,7 @@
   padding: 1rem;
 }
 
-.navbar__link {
+.my-navbar__link {
   margin-left: 1.7rem;
 }
 
@@ -53,21 +53,21 @@
   top: 1rem;
 }
 
-.navbar__item {
+.my-navbar__item {
   position: relative;
   top: 1rem;
 }
 
-.navbar__li:hover {
+.my-navbar__li:hover {
   background-color: var(--style-color-darker-yellow);
 }
 
-.navbar:hover {
+.my-navbar:hover {
   width: 220px;
   box-shadow: 0 0 10px 0 var(--style-color-dark-yellow);
   transition: all 0.5s ease;
 }
 
-.navbar:hover .navbar__logo {
+.my-navbar:hover .my-navbar__logo {
   width: 220px;
 }

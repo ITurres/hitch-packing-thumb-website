@@ -1,25 +1,25 @@
 @media (max-width: 900px) {
-  .navbar {
+  .my-navbar {
     position: unset;
     width: 100%;
     transition: 0;
   }
 
-  .navbar__ul {
+  .my-navbar__ul {
     display: flex;
   }
 
-  .navbar__logo {
+  .my-navbar__logo {
     transition: 0;
   }
 
-  .navbar__link {
+  .my-navbar__link {
     padding: 0;
     margin-left: 0;
   }
 
   .fa-solid,
-  .navbar__item {
+  .my-navbar__item {
     position: unset;
     top: 40px;
   }
@@ -29,29 +29,29 @@
     font-size: 1.3rem;
   }
 
-  .navbar__item {
+  .my-navbar__item {
     display: none;
     margin-left: 0;
   }
 
-  .navbar__li {
+  .my-navbar__li {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 15%;
   }
 
-  .navbar__li:hover {
+  .my-navbar__li:hover {
     background-color: var(--style-color-light-yellow);
   }
 
-  .navbar:hover {
+  .my-navbar:hover {
     width: 100%;
     box-shadow: 0 0 20px 5px var(--style-color-dark-yellow);
     transition: none;
   }
 
-  .navbar:hover .navbar__logo {
+  .my-navbar:hover .my-navbar__logo {
     width: 110px;
   }
 }
