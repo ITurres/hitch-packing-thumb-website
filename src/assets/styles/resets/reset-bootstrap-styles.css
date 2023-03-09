@@ -1,0 +1,16 @@
+/*?overrides inherited -bootstrap- scss property*/
+
+.my-navbar ol,
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.my-navbar {
+  display: unset;
+  padding: unset;
+}
+
+a:hover {
+  color: unset;
+}
