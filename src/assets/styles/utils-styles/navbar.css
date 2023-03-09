@@ -3,7 +3,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 110px;
   background-color: var(--style-color-light-yellow);
   box-shadow: 0 0 20px 5px var(--style-color-dark-yellow);
