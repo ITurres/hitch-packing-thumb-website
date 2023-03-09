@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--style-color-aqua-blue);
+  height: 100vh;
+  transition: background-color 1.2s;
+}
+
+.container {
+  max-width: 900px; /*? overrides container on base*/
+  width: 70%;
+}
+
+.main__text {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.main__text-link {
+  color: var(--style-color-bright-orange);
+}
+
+.main__text-link:hover {
+  color: var(--style-color-dark-orange);
+}
